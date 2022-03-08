@@ -1,0 +1,39 @@
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px rgb(109, 106, 106);
+    figure {
+        margin: 0;
+    }
+    .section-menu {
+        display: flex;
+        align-items: center;
+        ul {
+            list-style-type: none;
+            display: flex;
+            li {
+                padding: 0 15px;
+                color: var(--color-letter);
+                cursor: pointer;
+            }
+            li:hover {
+            }
+        }
+      
+    }
+    .section-cart {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        button {
+            background: transparent;
+            border: none;
+        }
+        figure {
+            img{
+                width: 45px;
+            }
+        }
+    }
+}

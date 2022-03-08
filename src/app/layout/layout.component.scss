@@ -1,0 +1,12 @@
+.main-app {
+    width: 100vw;
+    height: 100vh;
+    background: var(--whiteApp);
+    display: flex;
+    justify-content: center;
+
+    .container-center-app {
+        width: 1040px;
+        max-width: 1400px;
+    }
+}
