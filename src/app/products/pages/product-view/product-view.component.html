@@ -19,6 +19,9 @@
         <!-- PRICE -->
         <app-price-product [price]="125.000" percentage="50%" [oldPrice]="250.000"></app-price-product>
         <!-- AMOUNT -->
-        <app-amount-product [amount]="amountProduct" (changeAmount)="onChangeAmount($event)"></app-amount-product>
+        <div class="section-pay">
+            <app-amount-product [amount]="amountProduct" (changeAmount)="onChangeAmount($event)"></app-amount-product>
+            <app-button-pay></app-button-pay>
+        </div>
     </div>
 </main>

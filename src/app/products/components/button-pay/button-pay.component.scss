@@ -1,0 +1,25 @@
+button {
+    height: 50px;
+    width: 250px;
+    background: #fa7d1c;;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    box-shadow: 3px 3px #ffebda;
+    cursor: pointer;
+    figure {
+        margin: 0;
+        img {
+            width: 18px;
+        }
+    }
+    .text-add-cart {
+        color: white;
+        font-weight: 900;
+        letter-spacing: 0.8px;
+        font-size: 13px;
+    }
+}
