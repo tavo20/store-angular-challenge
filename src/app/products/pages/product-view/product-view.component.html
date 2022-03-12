@@ -7,15 +7,16 @@
             <app-view-main-img></app-view-main-img>
         </section>
         <!-- MAIN CHILD -->
-        <section class="section-imgs-child">
-            <app-view-child-img></app-view-child-img>
-            <app-view-child-img></app-view-child-img>
-            <app-view-child-img></app-view-child-img>
+        <section class="section-imgs-child" >
+            <app-view-child-img *ngFor="let image of imagesChild"></app-view-child-img>
         </section>
     </div>
 
-    <div>
-        <h4>SNEAKER COMPANY</h4>
-        <h2>Fall Limited Edition Sneakers</h2>
+    <div class="container-info-product">
+        <app-title-company></app-title-company>
+        <app-title-product name="Fall Limited Edition Sneakers"></app-title-product>
+        <app-description-product description="These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer"></app-description-product>
+        <!-- PRICE -->
+        <app-price-product [price]="125.000" percentage="50%" [oldPrice]="250.000"></app-price-product>
     </div>
 </main>
