@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-amount-product',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./amount-product.component.scss']
 })
 export class AmountProductComponent implements OnInit {
-
+  @Input() amount: number = 0;
+  @Output() changeAmount = new EventEmitter()
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public onAddLeastAmount(action: any) {
+    this.changeAmount.emit(action);
   }
 
 }
