@@ -4,11 +4,11 @@
     <div>
         <!-- MAIN IMG -->
         <section>
-            <app-view-main-img></app-view-main-img>
+            <app-view-main-img [imageMain]="imageProduct"></app-view-main-img>
         </section>
         <!-- MAIN CHILD -->
         <section class="section-imgs-child" >
-            <app-view-child-img *ngFor="let image of imagesChild"></app-view-child-img>
+            <app-view-child-img *ngFor="let imageC of imagesChild; let i = index" [image]="imageC"  [indexImage]="i" (changeImage)="onChangeImageMain($event)"></app-view-child-img>
         </section>
     </div>
 

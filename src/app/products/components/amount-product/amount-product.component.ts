@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./amount-product.component.scss']
 })
 export class AmountProductComponent implements OnInit {
-  @Input() amount: number = 0;
+  @Input() amount: number = 1;
   @Output() changeAmount = new EventEmitter()
   constructor() { }
 
