@@ -1,3 +1,4 @@
-<figure>
-    <img [id]="indexImage" (click)="onChangeImage()" [src]="image" alt="">
+<figure (click)="onChangeImage()">
+    <img [id]="indexImage"  [src]="image" alt="">
+    <div [id]="refBackground"></div>
 </figure>

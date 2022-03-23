@@ -31,7 +31,6 @@ export class ProductViewComponent implements OnInit {
   }
 
   public onChangeAmount(event: any) {
-    console.log(event);
     if(event === 'least') {
       if(this.amountProduct === 1) {
         return
