@@ -1,0 +1,36 @@
+section {
+    max-width: 150px;
+    width: 150px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    background: #f7f8fd;
+    align-items: center;
+    justify-items: center;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 2px 2px #eeeff5;
+    font-weight: 700;
+
+    .expand {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--colorCompany);
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    .least:hover {
+        border: 1px solid var(--colorCompany);
+        border-radius: 8px;
+    }
+    .amount {
+        
+    }
+    .more:hover {
+        border: 1px solid var(--colorCompany);
+        border-radius: 8px;
+    }
+}

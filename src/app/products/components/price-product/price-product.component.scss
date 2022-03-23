@@ -1,0 +1,32 @@
+section {
+    margin: 30px 0;
+
+    .price-and-percentage {
+        display: flex;
+        gap: 20px;
+        .price-end {
+            font-weight: 700;
+            font-size: 28px;
+        }
+        .percentage {
+            display: flex;
+            align-items: center;
+            color: var(--colorCompany);
+            background:  #f8e0d1;
+            padding: 0 8px;
+            border-radius: 8px;
+            font-weight: 900;
+            font-size: 14px
+    
+        }
+
+    }
+    .old-price {
+        color: #bdb9b9;;
+        margin: 10px 0 0 0;
+        text-decoration-line: line-through;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+}

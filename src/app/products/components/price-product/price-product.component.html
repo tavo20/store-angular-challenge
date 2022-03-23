@@ -1,0 +1,8 @@
+<section>
+    <div class="price-and-percentage">
+        <div *ngIf="price" class="price-end">{{ price | currency:'USD' }}</div>
+        <div *ngIf="percentage"  class="percentage">{{ percentage }}</div>
+    </div>
+
+    <div *ngIf="oldPrice"  class="old-price">{{ oldPrice | currency:'USD' }}</div>
+</section>
