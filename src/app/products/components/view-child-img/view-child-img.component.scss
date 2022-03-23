@@ -5,4 +5,9 @@ figure {
         border-radius: 10px;
         cursor: pointer;
     }
+
+    .current-img {
+        border: solid 2px var(--colorCompany);
+
+    }
 }

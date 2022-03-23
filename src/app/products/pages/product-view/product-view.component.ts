@@ -20,8 +20,10 @@ export class ProductViewComponent implements OnInit {
   ];
   /** How many products does the user want */
   public amountProduct: number = 0;
-
+  /** Main image */
   public imageProduct: string = this.imagesMain[0];
+
+  public currentPositionMainImage: number = 0;
 
   constructor() { }
 
@@ -42,6 +44,7 @@ export class ProductViewComponent implements OnInit {
 
   public onChangeImageMain(event: any) {
     this.imageProduct = this.imagesMain[event.index];
+    this.currentPositionMainImage = event.index;
   }
 
 }
