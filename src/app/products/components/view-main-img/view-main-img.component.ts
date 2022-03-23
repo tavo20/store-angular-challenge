@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-view-main-img',
@@ -14,6 +14,7 @@ export class ViewMainImgComponent implements OnInit, OnChanges {
   } 
 
   @Input() imageMainOtherTest: string = '';
+  @Output() viewBigMainImage = new EventEmitter();
   
   constructor() {}
 
@@ -25,6 +26,12 @@ export class ViewMainImgComponent implements OnInit, OnChanges {
     if(changes) {
       // this.imageMain = changes.changeImg.currentValue + '';
     }
+  }
+
+  onChangeImageView() {
+    this.viewBigMainImage.emit({
+      image: this.imageMain
+    })
   }
   
 

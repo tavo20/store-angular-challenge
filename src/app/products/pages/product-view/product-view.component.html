@@ -4,7 +4,7 @@
     <div>
         <!-- MAIN IMG -->
         <section>
-            <app-view-main-img [imageMain]="imageProduct"></app-view-main-img>
+            <app-view-main-img [imageMain]="imageProduct" (viewBigMainImage)="onViewMainImage($event)"></app-view-main-img>
         </section>
         <!-- MAIN CHILD -->
         <section class="section-imgs-child" >
@@ -17,10 +17,9 @@
             </app-view-child-img>
         </section>
     </div>
-
     <div class="container-info-product">
         <app-title-company></app-title-company>
-        <app-title-product name="Fall Limited Edition Sneakers"></app-title-product>
+        <app-title-product name="Fall Limited Edition Sneakers" ></app-title-product>
         <app-description-product description="These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer"></app-description-product>
         <!-- PRICE -->
         <app-price-product [price]="125.000" percentage="50%" [oldPrice]="250.000"></app-price-product>
@@ -28,6 +27,22 @@
         <div class="section-pay">
             <app-amount-product [amount]="amountProduct" (changeAmount)="onChangeAmount($event)"></app-amount-product>
             <app-button-pay></app-button-pay>
+        </div>
+    </div>
+
+    <div *ngIf="viewMdlImages" class="view-mdl" (click)="onMainBackgroundMdl($event)">
+        <div class="mdl-imgs">
+            <img [src]="imgMdlSelected" alt="">
+            <div class="left" (click)="onNextImage('left', $event)">
+                <div class="action">
+                    <img src="./assets/imgs/products/icon-previous.svg" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="action" (click)="onNextImage('rigth', $event)">
+                    <img src="./assets/imgs/products/icon-next.svg" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </main>
