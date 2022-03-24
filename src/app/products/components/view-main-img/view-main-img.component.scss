@@ -4,5 +4,12 @@ figure {
     img {
         max-width: 475px;
         border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 590px) {
+    img {
+        max-width: 394px !important;
     }
 }

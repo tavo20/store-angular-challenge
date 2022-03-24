@@ -34,7 +34,6 @@ export class ProductViewComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
     window.addEventListener('keydown', (e: any) => {
       if((e.key=='Escape'|| e.key=='Esc'|| e.keyCode==27) && (e.target.nodeName=='BODY')){
           e.preventDefault();

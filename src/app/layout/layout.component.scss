@@ -10,3 +10,25 @@
         max-width: 1400px;
     }
 }
+
+@media (max-width: 1333px) {
+    .container-center-app {
+        width: 800px !important;
+    }
+}
+
+@media (max-width: 920px) {
+    .container-center-app {
+        width: 640px !important;
+    }
+}
+@media (max-width: 650px) {
+    .container-center-app {
+        width: 570px !important;
+    }
+}
+@media (max-width: 585px) {
+    .container-center-app {
+        width: 100% !important;
+    }
+}

@@ -20,3 +20,9 @@ figure {
     background: #e5cbcb;
     
 }
+
+@media (max-width: 590px) {
+    img {
+        max-width: 78px !important;
+    }
+}
