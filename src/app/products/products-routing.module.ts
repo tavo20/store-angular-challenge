@@ -16,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: "**",
-    redirectTo: "product-view"
+    redirectTo: "products-all"
   }
 ]
 

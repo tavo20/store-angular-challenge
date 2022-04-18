@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MainService } from 'src/app/core/services/main/main.service';
 
 @Component({
   selector: 'app-product-view',
@@ -25,6 +26,7 @@ export class ProductViewComponent implements OnInit {
 
   public currentPositionMainImage: number = 0;
 
+  // view modal images
   public viewMdlImages: boolean = false;
 
   public imgMdlSelected: string = '';
@@ -38,7 +40,6 @@ export class ProductViewComponent implements OnInit {
       if((e.key=='Escape'|| e.key=='Esc'|| e.keyCode==27) && (e.target.nodeName=='BODY')){
           e.preventDefault();
           this.viewMdlImages = false;
-
       }
   }, true);
   }
@@ -51,6 +52,7 @@ export class ProductViewComponent implements OnInit {
       this.amountProduct--;
       return
     }
+    
     this.amountProduct++;
   }
 
