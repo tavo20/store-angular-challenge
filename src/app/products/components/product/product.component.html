@@ -1,0 +1,17 @@
+
+<div class="container-product">
+    <section class="info-product" (click)="onGoViewDetail()">
+        <h3> {{ product.title }}</h3>
+        
+        <figure>
+            <img [src]="product.images[0]" alt="no-image-product">
+        </figure>
+        
+        <p> {{ product.description }}</p>
+    </section>
+    
+    <div class="container-cart-button">
+        <button (click)="onAddCart()">Add cart</button>
+    </div>
+
+</div>

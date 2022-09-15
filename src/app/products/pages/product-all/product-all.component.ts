@@ -57,9 +57,5 @@ export class ProductAllComponent implements OnInit {
 
 
 
-  public onGoViewDetail(product: Product) {
-    console.log('Go View Detail', product);
-    this.router.navigate(['products/product-view', product.id]);
-  }
 
 }

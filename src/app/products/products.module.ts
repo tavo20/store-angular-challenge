@@ -12,6 +12,7 @@ import { DescriptionProductComponent } from './components/description-product/de
 import { PriceProductComponent } from './components/price-product/price-product.component';
 import { AmountProductComponent } from './components/amount-product/amount-product.component';
 import { ButtonPayComponent } from './components/button-pay/button-pay.component';
+import { ProductComponent } from './components/product/product.component';
 
 
 
@@ -26,7 +27,8 @@ import { ButtonPayComponent } from './components/button-pay/button-pay.component
     DescriptionProductComponent,
     PriceProductComponent,
     AmountProductComponent,
-    ButtonPayComponent
+    ButtonPayComponent,
+    ProductComponent
   ],
   imports: [
     CommonModule,

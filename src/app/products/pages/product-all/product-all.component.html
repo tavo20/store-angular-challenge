@@ -2,19 +2,10 @@
 
 
 <main>
-    <div *ngFor="let product of products" (click)="onGoViewDetail(product)">
-        <h3> {{ product.title }}</h3>
-
-        <figure>
-            <img [src]="product.images[0]" alt="">
-        </figure>
-
-        <p> {{ product.description }}</p>
-
-        <div class="container-cart-button">
-            <button>Add cart</button>
-        </div>
-
+    <div 
+        *ngFor="let product of products" 
+    >
+        <app-product [product]="product"></app-product>
     </div>
 
 </main>
