@@ -2,7 +2,7 @@
 
 
 <main>
-    <div *ngFor="let product of products">
+    <div *ngFor="let product of products" (click)="onGoViewDetail(product)">
         <h3> {{ product.title }}</h3>
 
         <figure>
@@ -17,7 +17,7 @@
 
     </div>
 
-    <div>
-        <button (click)="onGetMoreProducts()">More</button>
-    </div>
 </main>
+<div *ngIf="products.length > 0" class="container-more-products">
+    <button (click)="onGetMoreProducts()">More</button>
+</div>

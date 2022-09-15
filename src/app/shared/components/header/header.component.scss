@@ -7,6 +7,9 @@ header {
         margin: 0;
     }
     .section-menu {
+        figure {
+            cursor: pointer;
+        }
         display: flex;
         align-items: center;
         ul {

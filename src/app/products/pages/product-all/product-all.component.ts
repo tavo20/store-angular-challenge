@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MainService } from 'src/app/core/services/main/main.service';
-
+import Product from 'src/app/core/models/product';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -12,7 +13,16 @@ export class ProductAllComponent implements OnInit {
   public products: any = [];
   public limitProducts: number = 20;
   public offsetProducts: number = 0;
-  constructor(private mainService: MainService) { }
+
+
+
+  constructor(
+    private mainService: MainService,
+    public router: Router
+    ) {
+
+
+   }
 
   async ngOnInit() {
     try {
@@ -42,6 +52,14 @@ export class ProductAllComponent implements OnInit {
    this.products = [...this.products, ...products];
    console.log('this.products', this.products);
 
+  }
+
+
+
+
+  public onGoViewDetail(product: Product) {
+    console.log('Go View Detail', product);
+    this.router.navigate(['products/product-view', product.id]);
   }
 
 }
